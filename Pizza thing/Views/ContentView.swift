@@ -32,6 +32,8 @@ struct ContentView: View {
             Button("Add Pinapple") {
                 pizzaVM.addPineapple()
             }
+            .foregroundColor(/*@START_MENU_TOKEN@*/.red/*@END_MENU_TOKEN@*/)
+            
         
             Spacer()
                 .layoutPriority(1)
