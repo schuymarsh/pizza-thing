@@ -28,7 +28,7 @@ class PizzaVM: ObservableObject{
         
     
         var randomPizza = pizzaModel.favorites[randomIndex]
-        randomPizza.toppings.append("Pineaplle")
+        randomPizza.toppings.append("Pineapple")
         
         pizzaModel.favorites[randomIndex] = randomPizza
     }
