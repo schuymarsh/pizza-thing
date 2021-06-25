@@ -14,13 +14,19 @@ struct ContentView: View {
         
         VStack {
             List(pizzaVM.favorites) { pizza in
-                VStack(alignment: .leading) {
-                    Text(pizza.name)
+                HStack {
                     
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack {
-                            ForEach(pizza.toppings) { topping in
-                                Text(topping)
+                    Text("🍕")
+                        .font(.system(size: 50))
+                    
+                    VStack(alignment: .leading) {
+                        Text(pizza.name)
+                        
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack {
+                                ForEach(pizza.toppings) { topping in
+                                    Text(topping)
+                                }
                             }
                         }
                     }
