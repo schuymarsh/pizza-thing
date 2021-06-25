@@ -26,6 +26,7 @@ struct ContentView: View {
                             HStack {
                                 ForEach(pizza.toppings) { topping in
                                     Text(topping)
+                                        .foregroundColor(.secondary)
                                 }
                             }
                         }
